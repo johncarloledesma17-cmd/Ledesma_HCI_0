@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="#10120f" name="theme-color"/><meta content="Discover your Carlo.exe personality archetype through an interactive character quiz." name="description"/>
+<title>Personality.exe — Carlo.exe</title>
+<link href="style.css" rel="stylesheet"/><link href="personality.css" rel="stylesheet"/>
+<script defer="" src="hub.js"></script>
+<script defer="" src="personality.js"></script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<div class="site-shell">
+
+<main class="personality-page" id="main">
+<section class="personality-hero section">
+<p class="eyebrow"><span class="status-dot"></span> EXPLORE LAB / PERSONALITY.EXE</p>
+<h1>Meet your <span class="accent">character class.</span></h1>
+<p class="hero-lead">Eight quick choices. Sixteen possible archetypes. Find the character that matches how you explore, learn, decide, and organize.</p>
+<p class="personality-disclaimer">Just-for-fun self-reflection inspired by personality preference models—not an official MBTI assessment or a psychological diagnosis.</p>
+</section>
+<section aria-labelledby="quizTitle" class="personality-game panel-card">
+<div class="pg-top"><div><p class="lab-kicker">CHARACTER GENERATOR · V1.0</p><h2 id="quizTitle">Personality.exe</h2></div><span class="pg-save" id="saveStatus">PROGRESS SAVES LOCALLY</span></div>
+<div class="pg-progress-meta"><span id="stepLabel">QUESTION 1 / 8</span><span id="percentLabel">13%</span></div><div class="pg-progress"><span id="progressBar"></span></div>
+<div aria-live="polite" class="pg-question-stage" id="questionStage">
+<p class="pg-dimension" id="dimensionLabel">HOW YOU RECHARGE</p><h3 id="questionText">After a long day, you would rather…</h3>
+<div class="pg-options" id="optionsList"></div>
+</div>
+<div class="pg-controls"><button class="lab-secondary" disabled="" id="backButton" type="button">← Back</button><button class="lab-secondary" id="restartButton" type="button">Restart ↻</button></div>
+<p aria-live="polite" class="pg-feedback" id="feedback">Choose the option that feels most like you. There are no wrong answers.</p>
+<div aria-live="polite" class="pg-result" hidden="" id="resultPanel"></div>
+</section>
+<section class="pg-type-guide section"><div class="section-heading"><p class="eyebrow">THE CHARACTER ROSTER</p><h2>16 archetypes. <span class="accent">Many ways to think.</span></h2><p>These are original character classes for this portfolio. Your result is a snapshot, not a permanent label.</p></div><div class="pg-roster" id="roster"></div></section>
+
+</main>
+<footer class="site-footer"><span>CARLO.EXE</span><span>Stay curious. Keep leveling up.</span></footer>
+</div>
+<div aria-live="polite" class="toast" id="toast" role="status"></div>
+</body></html>
